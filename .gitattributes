@@ -1,0 +1,55 @@
+# ==============================================================================
+# GIT LFS CONFIGURATION FOR FACE RECOGNITION PROJECT
+# ==============================================================================
+
+# Machine Learning Models (Quan trọng nhưng dung lượng lớn)
+# ==============================================================================
+*.pb filter=lfs diff=lfs merge=lfs -text
+*.ckpt* filter=lfs diff=lfs merge=lfs -text
+*.meta filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.hdf5 filter=lfs diff=lfs merge=lfs -text
+*.weights filter=lfs diff=lfs merge=lfs -text
+*.model filter=lfs diff=lfs merge=lfs -text
+
+# MTCNN Detection Weights
+# ==============================================================================
+*.npy filter=lfs diff=lfs merge=lfs -text
+
+# Sample Images (Một số ảnh mẫu quan trọng)
+# ==============================================================================
+sample_images/*.jpg filter=lfs diff=lfs merge=lfs -text
+sample_images/*.jpeg filter=lfs diff=lfs merge=lfs -text
+sample_images/*.png filter=lfs diff=lfs merge=lfs -text
+
+# Video Files (Nếu cần lưu video test)
+# ==============================================================================
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+
+# Compressed Archives
+# ==============================================================================
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
+
+# Text Files và Code (Normal Git)
+# ==============================================================================
+*.py text
+*.md text
+*.txt text
+*.json text
+*.yaml text
+*.yml text
+*.cfg text
+*.ini text
+
+# Line Ending Configuration
+# ==============================================================================
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf 

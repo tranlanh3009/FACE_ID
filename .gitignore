@@ -1,0 +1,175 @@
+# ==============================================================================
+# FACE RECOGNITION PROJECT .GITIGNORE
+# ==============================================================================
+
+# Models và Pre-trained Files (Dung lượng lớn)
+# ==============================================================================
+Models/
+*.pb
+*.ckpt*
+*.meta
+*.pkl
+*.pth
+*.h5
+*.hdf5
+*.weights
+*.model
+
+# Dataset và Training Data
+# ==============================================================================
+DataSet/
+dataset/
+data/
+datasets/
+training_data/
+test_data/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.gif
+*.webp
+*.raw
+
+# MTCNN Detection Weights
+# ==============================================================================
+src/align/*.npy
+align/*.npy
+*.npy
+
+# Python
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+# ==============================================================================
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env
+.venv
+
+# Jupyter Notebook
+# ==============================================================================
+.ipynb_checkpoints
+*.ipynb
+
+# TensorFlow/PyTorch
+# ==============================================================================
+logs/
+checkpoints/
+*.ckpt
+*.pb
+events.out.tfevents.*
+runs/
+
+# OpenCV và Video Files
+# ==============================================================================
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.webm
+
+# IDE và Editor
+# ==============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary Files
+# ==============================================================================
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Backup Files
+# ==============================================================================
+*.bak
+*.backup
+*.old
+
+# Test Files
+# ==============================================================================
+test/
+tests/
+*_test.py
+test_*.py
+
+# Output và Results
+# ==============================================================================
+output/
+results/
+predictions/
+screenshots/
+captures/
+
+# Large Files (>100MB)
+# ==============================================================================
+# Sử dụng Git LFS cho file lớn thay vì bỏ qua hoàn toàn
+# *.zip
+# *.tar.gz
+# *.rar
+
+# Local Configuration
+# ==============================================================================
+config.local.py
+local_settings.py
+.env.local
+
+# Documentation Build
+# ==============================================================================
+docs/_build/
+
+# Coverage Reports
+# ==============================================================================
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# mypy
+# ==============================================================================
+.mypy_cache/
+.dmypy.json
+dmypy.json 
